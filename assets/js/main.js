@@ -13,7 +13,6 @@ const modalViews = document.querySelectorAll(".services__modal"),
   modalBtns = document.querySelectorAll(".services__button"),
   modalClose = document.querySelectorAll(".services__modal-close");
 
-// When the user clicks on the button, open the modal
 let modal = function (modalClick) {
   modalViews[modalClick].classList.add("active-modal");
 };
