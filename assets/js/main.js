@@ -230,21 +230,3 @@ sr.reveal(`.footer, footer__container`, {
   origin: "bottom",
   distance: "30px",
 });
-const form = document.querySelector("form");
-function sendEmail(){
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "ajaypandey91700@gmail.com",
-    Password : "3BF0A5094C7F2CECB8AADAD403EB2FEB2DB5",
-    To : 'ajaypandey91700@gmail.com',
-    From : "ajaypandey91700@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-}
-form.addEventListener("submit",(e)=>{
-e.preventDefault();
-sendEmail();
-});
