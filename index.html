@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title> Rupal Films Production</title>
+
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -71,9 +75,20 @@
             <!--=============== theme change button ===============-->
             <!-- <i class='bx bx-moon change-theme change-theme-button' id="theme-button" style="cursor: pointer;"></i> -->
             <!-- <a href="#about" class="button">About</a> -->
-            <a download="" href="https://maps.app.goo.gl/tHBb5sNqtW7kzgKy9" class="button button--ghost"><i
-                    class='bx bxs-map'></i> Location</a>
 
+            <!-- <a download="" href="https://maps.app.goo.gl/tHBb5sNqtW7kzgKy9" class="button button--ghost"></a> -->
+            <button id="myBtn" class="button button--ghost"><i class='bx bxs-map'></i> Location</button>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span >Please navigate to our location!!!</span>
+                  <span class="close">×</span>
+                  <!-- <iframe src="https://maps.google.com/maps?q=delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe> -->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59707.36298645983!2d73.004905!3d20.72199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0ec1aabb595fb%3A0x40d1389a4be7aa2b!2sVaghaldhara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1710764498030!5m2!1sen!2sin"  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              
+              </div>
         </nav>
     </header>
 
@@ -381,10 +396,6 @@
                     <div class="skills__box">
                         <div class="dir_skills__group">
                             <img src="assets/img/rupalifilms photos/rupalparmar2.jpg" alt="" class="dir_img"><span>Rupal Parmar has been a social entrepreneur in the Valsad District in Gujarat, having a natural aesthetic sense; has ventured into this Media & Films Venture.</span>
-                        </div>
-                    </div>
-                    
-                </div>
                 <!-- =========Rajesh Rana========= -->
                 <div class="dir_skills__content">
                     <h3 class="director_title">Rajesh Rana</h3>
@@ -413,12 +424,11 @@
                     
                 </div>
             </div>
-
         </section>
         <!--=============== WORK ===============-->
         <section class="work section" id="work">
-            <span class="section__subtitle">Rupal Films</span>
-            <h2 class="section__title">Recent Works</h2>
+            <span class="section__subtitle">Rupal Film Productions</span>
+            <h2 class="section__title">Previous Works</h2>
 
             <div class="work__filters">
                 <span class="work__item active-work" data-filter='all'>All</span>
@@ -433,9 +443,54 @@
 
                     <h3 class="work__title">3 Dev</h3>
 
-                    <a href="https://www.youtube.com/watch?v=6cmsXMYU8ag" target="_blank" class="work__button">
-                        Know more <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
+                    <span class="services__button" style="color: rgb(244, 72, 72);">
+                        Know More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+                </div>
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <i class='bx bx-x services__modal-close'></i>
+
+                        <h3 class="services__modal-title">3 Dev Gallery</h3>
+                        <div class="gallery">
+                            <img src="assets/img/rupalifilms photos/3dev_crop.jpeg" alt="" >
+                            <img src="assets/img/rupalifilms photos/3dev_bane.jpg" alt="" >
+                        </div><br>
+
+                        <p class="services__modal-description">
+                            Video links are here....
+                        </p>
+
+                        <ul class="services__modal-list">
+                            <a href="https://youtu.be/IRg23Ao2I_0?si=5n-DrMnAm4i2vO-q" target="_blank" style="color: aliceblue;">
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    3 Dev-Official Trailer !Karan Singh Grover Ravi Dubay Kunaal Roy Kapur Kay Kay Manon Raima<span style="color: rgb(244, 72, 72);">click here</span>.
+                                </p>
+                                
+                            </li>
+                        </a>
+                        <a href="https://youtu.be/6cmsXMYU8ag?si=QxCV1eKX1Meqj4Uv" target="_blank" style="color: aliceblue;">
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    Ban Dance Mein Kutta | 3 Dev |Karan Singh Grover, Ravi Dubey, Kunaal Roy Kapur |Divya K, Uvie, Shivi <span style="color: rgb(244, 72, 72);">click here</span>.
+                                </p>
+                                
+                            </li>
+                        </a>
+                        <a href="https://youtu.be/90KwV7Q50Lc?si=onjuRtYtbO-AtY-J" target="_blank" style="color: aliceblue;">
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    Nikamma | 3 Dev | Karan, Ravi Dubey & Kunaal Roy Kapur | Rahat | Sajid Wajid | Kausar <span style="color: rgb(244, 72, 72);">click here</span>.
+                                </p>
+                                
+                            </li>
+                        </a>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="work__card mix movil">
@@ -443,9 +498,54 @@
 
                     <h3 class="work__title">Veer Narmad</h3>
 
-                    <a href="#" class="work__button">
-                        Know more <i class='bx bx-right-arrow work__icon'></i>
-                    </a>
+                    <span class="services__button" style="color: rgb(244, 72, 72);">
+                        Know More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+                </div>
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <i class='bx bx-x services__modal-close'></i>
+
+                        <h3 class="services__modal-title">Veer Narmad Gallery</h3>
+                        <div class="gallery">
+                            <img src="assets/img/rupalifilms photos/veer_narmad/1.jpg" alt="" >
+                            <img src="assets/img/rupalifilms photos/veer_narmad/2.jpg" alt="" >
+                            <img src="assets/img/rupalifilms photos/veer_narmad/3.jpg" alt="" >
+                            <img src="assets/img/rupalifilms photos/veer_narmad/4.jpg" alt="" >
+                            <!-- <img src="assets/img/rupalifilms photos/veer_narmad/5.jpg" alt="" > -->
+                           
+                            <!-- <img src="assets/img/rupalifilms photos/veer_narmad/7.jpg" alt="" >
+                            <img src="assets/img/rupalifilms photos/veer_narmad/8.jpg" alt="" > -->
+                            <!-- <img src="assets/img/rupalifilms photos/veer_narmad/9.jpg" alt="" >
+                            <img src="assets/img/rupalifilms photos/veer_narmad/10.jpg" alt="" > -->
+                            <!-- <img src="assets/img/rupalifilms photos/veer_narmad/6.jpg" alt="" > -->
+                        </div><br>
+
+                        <!-- <p class="services__modal-description">
+                            Video links are here....
+                        </p>
+
+                        <ul class="services__modal-list">
+                            <a href="https://ajaypandey.live" target="_blank" style="color: aliceblue;">
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    For first video <span style="color: rgb(244, 72, 72);">click here</span>.
+                                </p>
+                                
+                            </li>
+                        </a>
+                        <a href="https://ajaypandey.live" target="_blank" style="color: aliceblue;">
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    For second video <span style="color: rgb(244, 72, 72);">click here</span>.
+                                </p>
+                                
+                            </li>
+                        </a> -->
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- <div class="work__card mix design">
@@ -538,12 +638,12 @@
 
         <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
-            <sapn class="section__subtitle">Get in touch</sapn>
-            <h3 class="section__title">Contact Me</h3>
+            <span class="section__subtitle">Get in touch</span>
+            <h3 class="section__title">Contact Us</h3>
 
             <div class="contact__container container grid">
                 <div class="contact__content">
-                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+                    <h3 class="contact__title contact__title-info">Talk to us</h3>
 
                     <div class="contact__info">
                         <div class="contact__card">
@@ -551,7 +651,7 @@
                             <h3 class="contact__card-title">Email</h3>
                             <span class="contact__card-data">rupalfilms@gmail.com</span>
 
-                            <a href="mailto:example@domain.com" target="_blank" class="contact__button">
+                            <a href="mailto:rupalfilms@gmail.com" target="_blank" class="contact__button">
                                 Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
                             </a>
                         </div>
@@ -559,7 +659,7 @@
                         <div class="contact__card">
                             <i class='bx bxl-whatsapp contact__card-icon'></i>
                             <h3 class="contact__card-title">Whatsapp</h3>
-                            <span class="contact__card-data">9979359800</span>
+                            <span class="contact__card-data">+91 9979359800</span>
 
                             <a href="https://api.whatsapp.com/send?phone=+919979359800&text=Hey there!" target="_blank"
                                 class="contact__button">
@@ -582,25 +682,25 @@
                 <div class="contact__content">
                     <h3 class="contact__title contact__title-form">Write Me your Message</h3>
 
-                    <form action="" class="contact__form">
+                    <form action="#" class="contact__form">
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Enter name" class="contact__form-input">
+                            <input type="text" placeholder="Enter name" class="contact__form-input" name="name">
                         </div>
 
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Mail</label>
-                            <input type="text" placeholder="Enter email" class="contact__form-input">
+                            <input type="email" placeholder="Enter email" class="contact__form-input" >
                         </div>
 
                         <div class="contact__form-div contact__form-area">
                             <label for="" class="contact__form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
+                            <textarea name="msg" id="" cols="30" rows="10" placeholder="Write your Message"
                                 class="contact__form-input "></textarea>
                         </div>
 
 
-                        <button class="button">
+                        <button class="button" type="submit">
                             Send Message
                         </button>
                     </form>
@@ -676,6 +776,29 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+    
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+    
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+    
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
