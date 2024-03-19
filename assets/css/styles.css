@@ -83,6 +83,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: 0.4s; /* for light mode animation */
+  overflow-x: hidden;
 }
 
 h1,
@@ -1092,11 +1093,21 @@ iframe{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+/* For small devices */
+
 @media screen and (max-width: 320px) {
-  .nav__menu {
+  /* .nav__menu {
     padding: 1rem 1.5rem;
+  } */
+
+  /* new adding from chatgpt */
+  .about__description {
+    padding: 1rem;
   }
 
+  .nav__menu {
+    padding: 0.75rem;
+  }
   .home__button {
     flex-direction: column;
   }
