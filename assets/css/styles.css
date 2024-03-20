@@ -567,6 +567,8 @@ iframe{
   /* border-radius: 1rem; */
   margin-bottom: 0.50rem;
   width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 .dir_skills__group {
   /* display: grid; */
@@ -1342,7 +1344,7 @@ iframe{
   }
 
   .skills__container {
-    grid-template-columns: repeat(2, 460px);
+    grid-template-columns: repeat(3, 460px);
     column-gap: 3rem;
   }
 
