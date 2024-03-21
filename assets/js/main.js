@@ -58,6 +58,29 @@ workLinks.forEach((wl) => {
   });
 });
 
+/*=============== SWIPER FOUNDERS ===============*/
+
+let swiperFounder = new Swiper("skills", {
+  spaceBetween: 24,
+  loop: true,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 48,
+    },
+  },
+});
+
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 let swiperTestimonial = new Swiper(".testimonial__container", {
@@ -210,6 +233,14 @@ sr.reveal(`.testimonial__container`, {
   distance: "30px",
 });
 
+// New add for founder
+sr.reveal(`.skills__container`, {
+  delay: 100,
+  scale: 0.9,
+  origin: "bottom",
+  distance: "30px",
+});
+
 sr.reveal(`.contact__info, .contact__title-info`, {
   delay: 100,
   scale: 0.9,
@@ -230,3 +261,76 @@ sr.reveal(`.footer, footer__container`, {
   origin: "bottom",
   distance: "30px",
 });
+
+// Add new swipe function
+function handleSwipe() {
+  // define the minimum distance to trigger the action
+  const minDistance = 80;
+  const container = document.querySelector('.skills__container');
+  const output = document.querySelector('.output');
+  // get the distance the user swiped
+  const swipeDistance = container.scrollLeft - container.clientWidth;
+  if (swipeDistance < minDistance * -1) {
+    output.innerHTML = 'swiped left';
+  } else if (swipeDistance > minDistance) {
+    output.innerHTML = 'swiped right';
+  } else {
+    output.innerHTML = `did not swipe ${minDistance}px`;
+  }
+}
+
+// let container = document.getElementById('skills');
+// let startX, startY, dist, threshold = 50; // Minimum distance required for swipe
+// let startTime, elapsedTime, allowedTime = 300; // Maximum time allowed for a swipe
+
+// container.addEventListener('touchstart', function(e) {
+//   let touchobj = e.changedTouches[0];
+//   startX = touchobj.pageX;
+//   startY = touchobj.pageY;
+//   startTime = new Date().getTime(); // record time when finger first makes contact with surface
+//   e.preventDefault(); // prevent default click behavior
+// }, false);
+
+// container.addEventListener('touchmove', function(e){
+//   e.preventDefault(); // prevent scrolling when inside DIV
+// }, false);
+
+// container.addEventListener('touchend', function(e) {
+//   let touchobj = e.changedTouches[0];
+//   dist = touchobj.pageX - startX; // get total dist traveled by finger while in contact with surface
+//   elapsedTime = new Date().getTime() - startTime; // get time elapsed
+//   // check if swipe is left or right, and if swipe distance is greater than threshold and time is under allowed time
+//   if (elapsedTime <= allowedTime && Math.abs(dist) >= threshold) {
+//     if (dist > 0) {
+//       // swipe right
+//       console.log("Swiped right");
+//       // You can add your custom logic here for swipe right action
+//     } else {
+//       // swipe left
+//       console.log("Swiped left");
+//       // You can add your custom logic here for swipe left action
+//     }
+//   }
+//   e.preventDefault();
+// }, false);
+
+// auto slider for core team
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
