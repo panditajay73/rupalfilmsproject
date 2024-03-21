@@ -559,7 +559,7 @@ iframe{
   padding: 1.5rem;
   border-radius: 1.25rem;
   text-align: center;
-  box-shadow: 0 0 10px 15px rgb(56 32 108);
+  box-shadow: 0 0 15px 4px rgb(56 32 108);
 }
 /* .dir_skills__content:hover{
   color: #111;
@@ -583,6 +583,9 @@ iframe{
   width: 50%;
   display: block;
   margin: 0 auto;
+  border: 2px solid var(--first-color);
+  box-shadow: 0 0 15px 4px rgb(56 32 108);
+  
 }
 .dir_skills__group {
   /* display: grid; */
@@ -1356,10 +1359,10 @@ iframe{
   .about__description {
     padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
-  }
+  } 
 
   .skills__container {
-    grid-template-columns: repeat(3, 460px);
+    grid-template-columns: repeat(3, 340px);
     column-gap: 3rem;
   }
 
