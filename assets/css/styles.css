@@ -368,10 +368,16 @@ iframe{
   color: var(--text-color);
   margin-bottom: 2.5rem;
 }
-
+/* new addition of color */
+.home__namecolor{
+  /* box-shadow: 0 0 10px 15px rgb(56 32 108); */
+  text-shadow: rgb(56 32 108) 1px 0 10px;;
+}
 .home__name {
   font-size: var(--biggest-font-size);
   color: var(--first-color);
+  text-shadow: 1px 1px rgb(126, 87, 209), 0 0 20px rgb(126, 87, 209), 0 0 11px rgb(139, 91, 244)
+  /* text-shadow:rgb(56 32 108) 1px 0 10px; */
 }
 
 .home__img {
@@ -525,6 +531,8 @@ iframe{
 }
 
 /*=============== SKILLS ===============*/
+
+
 .skills__container {
   /* row-gap: 2rem; */
   padding-top: 1rem;
@@ -551,7 +559,13 @@ iframe{
   padding: 1.5rem;
   border-radius: 1.25rem;
   text-align: center;
+  box-shadow: 0 0 10px 15px rgb(56 32 108);
 }
+/* .dir_skills__content:hover{
+  color: #111;
+  background: greenyellow;
+  box-shadow: 0 0 100px greenyellow;
+} */
 .dir2_container {
   position: relative;
 }
@@ -567,18 +581,20 @@ iframe{
   /* border-radius: 1rem; */
   margin-bottom: 0.50rem;
   width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 .dir_skills__group {
   /* display: grid; */
   align-content: flex-start;
   row-gap: 1rem;
   float:inherit;
-  text-align: justify;
+  text-align: center;
 }
 .dir{
   text-align: center;
   font-size: var(--small-font-size);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 .director_title{
   font-size: var(--normal-font-size);
@@ -1209,7 +1225,7 @@ iframe{
   }
 
   .services__modal-content {
-    width: 500px;
+    width: 40%;
     padding: 4.5rem 2.5rem 2.5rem;
   }
 
@@ -1271,6 +1287,7 @@ iframe{
     justify-content: center;
   }
 } */
+
 
 /* For large devices */
 @media screen and (min-width: 992px) {
@@ -1342,7 +1359,7 @@ iframe{
   }
 
   .skills__container {
-    grid-template-columns: repeat(2, 460px);
+    grid-template-columns: repeat(3, 460px);
     column-gap: 3rem;
   }
 
